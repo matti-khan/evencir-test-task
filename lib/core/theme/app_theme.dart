@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-import 'app_colors.dart';
+import '../colors/app_colors.dart';
 
 TextTheme _textTheme(Color primary, Color secondary) => TextTheme(
       titleLarge: GoogleFonts.mulish(

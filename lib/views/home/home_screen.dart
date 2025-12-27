@@ -3,7 +3,7 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
 
 import '../../controllers/home_controller.dart';
-import '../../utils/app_colors.dart';
+import '../../core/colors/app_colors.dart';
 import 'package:test_task/core/components/custom_strip_card.dart';
 
 class HomeScreen extends StatelessWidget {

@@ -3,7 +3,7 @@ import 'package:get/get.dart';
 import 'package:intl/intl.dart';
 import 'package:table_calendar/table_calendar.dart';
 
-import '../utils/app_colors.dart';
+import '../core/colors/app_colors.dart';
 
 class HomeController extends GetxController {
   final selectedDate = DateTime.now().obs;

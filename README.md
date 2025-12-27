@@ -1,23 +1,44 @@
-## Dependencies Used & Why
+# Test Task
 
-The following key packages were used to meet the specific UI and functional requirements of the test task:
+---
 
-- **`get`**:
-    - **Purpose**: Used for reactive state management (managing `Rx` variables like `selectedDate`, `moodValue`) and Dependency Injection (`Get.put`).
-    - **Why**: It allows for cleaner separation of logic (Controllers) from UI (Views) and dramatically reduces boilerplate code compared to `Provider` or `Bloc` for a task of this size.
+## 1. Dependencies
 
-- **`sleek_circular_slider`**:
-    - **Purpose**: Implements the interactive mood dial in the Mood Screen.
-    - **Why**: The design required a complex circular progress interaction. This package provided a highly customizable base that was further enhanced with gradient overlays and custom inner widgets.
+- **`get`**: For reactive state management and dependency injection.
+- **`sleek_circular_slider`**: For the custom interactive mood dial.
+- **`table_calendar`**: For the weekly strip view and date selection.
+- **`flutter_svg`**: For rendering high-quality SVG icons.
+- **`intl`**: For dynamic date formatting.
 
-- **`table_calendar`**:
-    - **Purpose**: Powers the weekly strip view in Home and the monthly view in the Bottom Sheet selector.
-    - **Why**: It is the industry standard for Flutter calendars, offering robust "week mode" support and easy customization of header/day styles to match the dark theme.
+---
 
-- **`flutter_svg`**:
-    - **Purpose**: Renders the SVG assets (icons) used throughout the app.
-    - **Why**: Ensures high-quality, resolution-independent vector graphics for the UI icons (e.g., navigation icons, workout types).
+## 2. Project Structure
 
-- **`intl`**:
-    - **Purpose**: Handles date formatting.
-    - **Why**: Essential for dynamically formatting dates (e.g., "Mon", "Dec 22") and localization-safe transformations.
+```text
+lib/
+├── controllers/    # Business Logic (GetxControllers)
+├── views/          # UI Screens (Dashboard, Home, Mood)
+├── core/           # Core Components & Configuration
+│   ├── components/ # Reusable Widgets (CustomStripCard)
+│   ├── theme/      # App Theme Data
+│   └── colors/     # Static Color Palette
+└── main.dart       # Entry Point
+```
+
+---
+
+## 3. App Screenshots
+
+https://drive.google.com/drive/folders/1LqfQcFbXrExrYMCOyiD8XODNE7pD27IH?usp=drive_link
+
+---
+
+## 4. App Video
+
+https://drive.google.com/file/d/1apKavFlEULmOUfjWU2ZQiv5uV-jZ-mP1/view?usp=drive_link
+
+---
+
+## 5. App APK
+
+https://github.com/matti-khan/evencir-test-task/releases/download/v1.0.0/app-release.apk
